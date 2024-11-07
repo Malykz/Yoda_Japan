@@ -53,7 +53,7 @@ if (isset($_GET['nik'])) {
           <a class="nav-link text-light" href="../menu/menu.php">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="">Karyawan</a>
+          <a class="nav-link text-light" href="karyawan.php">Karyawan</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">
@@ -91,6 +91,10 @@ if (isset($_GET['nik'])) {
                 <option value="kasir" <?php if($row['jabatan']=='kasir') echo 'selected'; ?>>Kasir</option>
                 <option value="koki" <?php if($row['jabatan']=='koki') echo 'selected'; ?>>Koki</option>
             </select>
+        </div>
+        <div class="form-group mb-3">
+          <label for="penjualan">Penjualan:</label>
+          <input type="text" class="form-control" name="penjualan" value="<?php echo $row['penjualan']; ?>" required>
         </div>
         
         <button type="submit" class="btn btn-primary mr-2">Update</button>

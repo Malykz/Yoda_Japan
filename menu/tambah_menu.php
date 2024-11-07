@@ -31,7 +31,7 @@ if (!isset($_SESSION['nama'])) {
           <a class="nav-link text-light" href="menu.php">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="../kasir/kasir.php">Kasir</a>
+          <a class="nav-link text-light" href="../karyawan/karyawan.php">Karyawan</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">
