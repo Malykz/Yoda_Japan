@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $result = mysqli_query($conn, $query);
     $user = mysqli_fetch_assoc($result);
 
-    if($user && password_verify($password, $user['password'])){
+    if($password == $user['password']){
         $_SESSION['nama'] = $user['nama'];
         $_SESSION['jabatan'] = $user['jabatan'];
         header('Location: dashboard.php');
